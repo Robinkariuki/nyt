@@ -37,7 +37,7 @@ Run git clone with the  editor of choice to clone the application to your local 
 1. Get a free API Key at [https://developer.nytimes.com/](https://developer.nytimes.com/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Robinkariuki/nyt.git
    ```
 3. Install NPM packages
    ```sh
