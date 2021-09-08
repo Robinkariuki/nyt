@@ -9,7 +9,7 @@ import axios from "axios";
 export const Home = () => {
     const [news,setNews] = useState([])
     const getNewsList =()=>{
-        const url = 'https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=ZjUlb4LGAUBsyJjfQWfQ1RhqMvCGEJwB' 
+        const url = `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${process.env.REACT_APP_API_KEY}` 
         axios.get(url)
         .then((response)=>{
              setNews(response.data.results)

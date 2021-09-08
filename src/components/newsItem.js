@@ -8,8 +8,8 @@ export const NewsItem= (props) => {
  return( props.props.media.map(url=>{
 
     return (
-      <Col  xs={12} sm={4} md={3}>
-        <div key={url.toString()} >
+      <Col  xs={12} sm={4} md={3} key={url.toString()}>
+        <div  >
             <Card className='mt-3'>
              
   <Card.Header>{props.props.byline}</Card.Header>
