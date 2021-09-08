@@ -1,13 +1,25 @@
 import React from 'react'
 import { NewsItem } from "./newsItem";
 import Container from 'react-bootstrap/Container'
-export const NewsList = () => {
+import Row from 'react-bootstrap/Row'
+export const NewsList = (props) => {
+
+    const listItems = props.props.map(article =>
+  
+
+ 
+    <NewsItem key={article.id} props={article} />
+    
+   
+  );
+
+
     return (
         <div>
-            <Container>
-            <NewsItem/>
-            <NewsItem/>
-            <NewsItem/>
+            <Container className='mt-3'>
+                <Row>
+           {listItems}
+           </Row>
             </Container>
         </div>
     )
